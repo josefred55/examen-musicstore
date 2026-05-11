@@ -1,0 +1,10 @@
+a) El símbolo - aparece delante de los atributos y el + delante de los métodos. ¿Qué significa cada
+uno en términos de visibilidad?
+b) ¿Qué tipo de dato es disponible y que dos valores puede tener?
+c) Para qué sirve el método ToString() en una clase de C#?
+
+Respuestas:
+
+a) El símbolo - delante de los atributos significa que estos son privados y solo se puede acceder a ellos desde dentro de la misma clase. El símbolo + delante de los métodos significa que estos son públicos y se puede acceder a ellos desde cualquier parte del programa
+b)Disponible es de tipo bool. Sus únicos dos valores pueden ser: True (si está disponible) o False (si no está disponible).
+c) El método toString en una clase sirve para mostrar la información de los atributos que se necesiten de dicha clase.
