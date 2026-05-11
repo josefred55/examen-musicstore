@@ -40,6 +40,19 @@ static void Main(string[] args)
     Console.WriteLine("Fecha actual: " + fecha.ToShortDateString());
 
     guardarAlbumes(albumes, "albumes.txt");
+
+    //Testear gestorBD
+    GestorBD dbAlbum = new GestorBD();
+    foreach (Album album in albumes)
+    {
+        dbAlbum.Insertar(album);
+    }
+
+    List<Album> albumesDatabase = dbAlbum.obtenerTodos();
+    foreach (Album album in albumesDatabase)
+    {
+        Console.WriteLine("Album en la database: " + album);
+    }
 }
 
 Main(args);
